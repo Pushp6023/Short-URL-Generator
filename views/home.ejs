@@ -12,7 +12,7 @@
     <title>Document</title>
 </head>
 <body>
-    <% if(locals.id) {%> <p>URL generated: localhost:8002/url/<%= id %> </p>
+    <% if(locals.id) {%> <p>URL generated: localhost:<%= process.env.PORT %>/url/<%= id %> </p>
     <%} %>
     <h1>URL Shortener</h1>
     <div>
